@@ -1,23 +1,22 @@
-
-import './App.css';
-
+import { useState } from "react";
+import { Header, Meals } from "./components";
+import CookiesModal from "./components/UI/CookiesModal";
+// import TestPage from "./pages/testPage/testPage";
+import "./styles/index.scss";
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(true);
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <main className="main-content">
+        <Meals />
+      </main>
+      {/* <CookiesModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      /> */}
+    </>
+    // <TestPage />
   );
 }
 

@@ -1,0 +1,47 @@
+$white:             #ffffff;
+$pale-grey:         #f9fafb;
+$pale-grey-two:     #f2f4f6;
+$light-blue-grey:   #ccd4dd;
+$steel:             #898687;
+$charcoal-grey:     #313539;
+$dark-grey:         #1e1f20;
+$grey:              #CBC9C9;
+
+
+// Grid Containers
+$container:                                     100% !default;
+$container-m:                                   720px !default;
+$container-l:                                   960px !default;
+$container-xl:                                  1530px !default;
+
+$breakpoint-m:                                  ($container-m + 20) !default;
+$breakpoint-l:                                  ($container-l + 20) !default;
+$breakpoint-xl:                                 ($container-xl + 20) !default;
+$breakpoint-s:                                  (0) !default;
+
+@mixin breakpoint($bp) {
+    @if $bp == xl {
+      @media only screen and (min-width: $breakpoint-xl) { @content ; }
+    }
+    @else if $bp == l {
+      @media only screen and (min-width: $breakpoint-l) { @content ; }
+    }
+    @else if $bp == m {
+      @media only screen and (min-width: $breakpoint-m) { @content ; }
+    }
+    @else if $bp == s {
+        @media only screen and (min-width: $breakpoint-s) { @content ; }
+    }
+}
+
+
+
+
+
+// ================== STACKOVERFLOW ========================
+// I had this same error. To fix this, I had to navigate to
+// node_modules/resolve-url-loader
+// open
+// index.js
+// and under var options change removeCR from "false" to "true".
+// =======================================================
