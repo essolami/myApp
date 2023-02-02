@@ -1,9 +1,5 @@
 import loadable from "@loadable/component";
 
-const CookiesModal = loadable(
-  () => import("../../components/modals/CookiesModal"),
-  {
-    fallback: null,
-  }
-);
+const CookiesModal = loadable(() => import("../../components/svgs/backIcon"));
+
 export { CookiesModal };

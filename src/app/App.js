@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { CookiesModal } from "../routes/modalRoutes";
-
 import "../styles/index.scss";
+import { CookiesModal } from "../routes/modalRoutes";
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(true);
   return (
+    // <Icons.SpotifyIcon />
     <CookiesModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
   );
 }
