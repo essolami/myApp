@@ -15,12 +15,12 @@ const BackIcon = loadable(() => import("../../components/svgs/backIcon"));
 const HeartIcon = loadable(() => import("../../components/svgs/heartIcon"));
 const CastIcon = loadable(() => import("../../components/svgs/castIcon"));
 const ShuffleIcon = loadable(() => import("../../components/svgs/shuffleIcon"));
-const Previousicon = loadable(() =>
+const PreviousIcon = loadable(() =>
   import("../../components/svgs/previousIcon")
 );
-const Nexticon = loadable(() => import("../../components/svgs/nextIcon"));
-const Repeaticon = loadable(() => import("../../components/svgs/repeatIcon"));
-const Playicon = loadable(() => import("../../components/svgs/playIcon"));
+const NextIcon = loadable(() => import("../../components/svgs/nextIcon"));
+const RepeatIcon = loadable(() => import("../../components/svgs/repeatIcon"));
+const PlayIcon = loadable(() => import("../../components/svgs/playIcon"));
 
 export {
   SpotifyIcon,
@@ -34,8 +34,8 @@ export {
   HeartIcon,
   CastIcon,
   ShuffleIcon,
-  Previousicon,
-  Nexticon,
-  Repeaticon,
-  Playicon,
+  PreviousIcon,
+  NextIcon,
+  RepeatIcon,
+  PlayIcon,
 };

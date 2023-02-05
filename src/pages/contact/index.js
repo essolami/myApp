@@ -1,9 +1,9 @@
 import loadable from "@loadable/component";
-import { ErrorBoundary } from "../../components";
-import { Loading } from "../../components";
+import { ErrorBoundary } from "../../routes/_helpersRoutes";
+import { Loading } from "../../routes/_helpersRoutes";
 
 const Contact = loadable(() => import("./contact"), {
-  fallback: <Loading/>,
+  fallback: <Loading />,
 });
 
 export default (props) => (

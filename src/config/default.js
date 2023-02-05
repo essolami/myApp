@@ -5,11 +5,11 @@ export default {
   APP: {
     htmlAttributes: { lang: "en" },
     title: "Spotify Clone",
-    // titleTemplate: "HAMZA ESSOLAMI VERSION - %s",
     meta: [
       {
         name: "description",
-        content: "Hamza Essolami version of react anyone can clone and working on it.",
+        content:
+          "Hamza Essolami version of react anyone can clone and working on it.",
       },
     ],
   },
