@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HeartIcon, CastIcon } from "../../routes/svgRoutes";
+import { HeartIcon, CastIcon } from "../../components";
 import PlayerControl from "./player_control";
 import "./styles.scss";
 class Player extends Component {

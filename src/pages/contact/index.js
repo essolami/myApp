@@ -1,6 +1,6 @@
 import loadable from "@loadable/component";
-import { ErrorBoundary } from "../../routes/_helpersRoutes";
-import { Loading } from "../../routes/_helpersRoutes";
+import { ErrorBoundary } from "../../components";
+import { Loading } from "../../components";
 
 const Contact = loadable(() => import("./contact"), {
   fallback: <Loading />,

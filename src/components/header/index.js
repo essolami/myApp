@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./styles.scss";
-import { BackIcon } from "../../routes/svgRoutes";
+import { BackIcon } from "../../components";
 
-class index extends Component {
+class Header extends Component {
   render() {
     return (
       <header className="header_container">
@@ -22,4 +22,4 @@ class index extends Component {
   }
 }
 
-export default index;
+export default Header;

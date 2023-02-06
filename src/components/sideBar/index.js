@@ -8,8 +8,8 @@ import {
   LikedPlaylistIcon,
   AddPlaylistIcon,
   InstallIcon,
-} from "../../routes/svgRoutes";
-import { MyPlaylists } from "../../routes/componentRoutes";
+  UserPlaylists,
+} from "../../components";
 
 class SideBar extends Component {
   render() {
@@ -56,14 +56,12 @@ class SideBar extends Component {
         </div>
         <hr className="menu_separator"></hr>
         <div className="user_playlists menu_fonts">
-          <MyPlaylists />
+          <UserPlaylists />
         </div>
         <div className="app_install menu_fonts">
           <a className="app_install_link">
             <InstallIcon className="icon" />
-            <span className="Type__TypeElement-goli3j-0 gnbLuy ellipsis-one-line">
-              Install App
-            </span>
+            <span className="">Install App</span>
           </a>
         </div>
       </div>

@@ -1,11 +1,12 @@
 import React from "react";
-import routes from "../routes/pageRoutes";
+
 import { BrowserRouter, Route, Switch, Await } from "react-router-dom";
 import config from "../config";
 import { Helmet } from "react-helmet";
-import { Loading } from "../routes/_helpersRoutes";
+
 import "./style.scss";
-import { Header, Player, SideBar } from "../routes/componentRoutes";
+import routes from "../pages";
+import { Header, Player, SideBar, Loading } from "../components";
 
 function App() {
   return (

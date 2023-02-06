@@ -1,5 +1,5 @@
 import loadable from "@loadable/component";
-import { ErrorBoundary } from "../../routes/_helpersRoutes";
+import { ErrorBoundary } from "../../components";
 const Home = loadable(() => import("./home"), {
   fallback: null,
 });

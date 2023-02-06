@@ -5,7 +5,7 @@ import {
   PlayIcon,
   NextIcon,
   RepeatIcon,
-} from "../../../routes/svgRoutes";
+} from "../../../components";
 
 class PlayerControl extends Component {
   render() {
